@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Exercise_5 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // The positions goes out of bounds
+
+    private float topBound = 20f;
+
+    private float OutOfBounds()
     {
-        
+        if (transform.position.z < topBound)
+        {
+            Debug.Log($"The element's position goes out of bounds");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        OutOfBounds();
     }
 }

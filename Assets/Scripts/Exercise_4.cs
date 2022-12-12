@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Exercise_4 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    // Random element - Array
+    
+    //public GameObject[] elementsPrefabs;
+    //public int elementIndex;
+    
+    //private float SpawnRandomElement()
+    //{
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   // }
+    
+   // private void Updtae()
+    //{
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+            //Instantiate(elementsPrefabs[SpawnRandomElement], new Vector3(0, 0, 0), Quaternion.identity);
+        //}
+   // }
+    
 }

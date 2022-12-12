@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Exercise_3 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Lower and upper limit
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //private float spawnRangeX = 10f;
+    //private float spawnPosZ = 12f;
+
+    //private float RandomPos()
+    //{
+        //float randomX = Random.Range(-spawnRangeX, spawnRangeX);
+        //return new Vector3 (randomX, 0, spawnPosZ);
+   // }
+
+    ///private void Start()
+    //{
+        //RandomPos();
+    //}
 }
