@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class Exercise_3 : MonoBehaviour
 {
-    // Lower and upper limit
+    // Lower and upper limits
 
-    //private float spawnRangeX = 10f;
-    //private float spawnPosZ = 12f;
+    private float spawnRangeX = 10f;
+    private float spawnRangeNegativeX = -12f;
+    
 
-    //private float RandomPos()
-    //{
-        //float randomX = Random.Range(-spawnRangeX, spawnRangeX);
-        //return new Vector3 (randomX, 0, spawnPosZ);
-   // }
+    private Vector3 RandomPos(float spawnRangeX, float spawnRangeNegativeX)
+    {
+       float randomX = Random.Range(spawnRangeX, spawnRangeNegativeX);
+        return new Vector3(randomX, 0, 0);
+    }
 
-    ///private void Start()
-    //{
-        //RandomPos();
-    //}
+    private void Start()
+    {
+        transform.position = RandomPos(spawnRangeX, spawnRangeNegativeX);
+    }
 }

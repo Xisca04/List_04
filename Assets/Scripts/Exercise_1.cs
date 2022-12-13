@@ -9,15 +9,12 @@ public class Exercise_1 : MonoBehaviour
     public int total;
     public int num;
     private int result;
-    
 
     private void MoneyBox(int num)
     {
         result = num + total;
-        Debug.Log($"The total of the moneybox is {result}");
-       
+        Debug.Log($"The total of the money box is {result}.");
     }
-
 
     private void Start()
     {
