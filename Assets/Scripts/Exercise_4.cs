@@ -7,16 +7,18 @@ public class Exercise_4 : MonoBehaviour
     // Random element - Array
 
     public string[] element;
-    public int stringIndex;
+    private int stringIndex;
 
-    private void SpawnRandomObject()
+    private void SpawnRandomAnimal()
     {
-       
-        return;
+        stringIndex = Random.Range(0, element.Length);
+        //Instantiate(element[stringIndex], new Vector3(0, 0, 2), Quaternion.identity);
+
     }
 
-    private void Update()
+    private void Start()
     {
-        SpawnRandomObject();   
+        SpawnRandomAnimal();
     }
+
 }
