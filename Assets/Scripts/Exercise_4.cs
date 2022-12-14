@@ -9,16 +9,16 @@ public class Exercise_4 : MonoBehaviour
     public string[] element;
     private int stringIndex;
 
-    private void SpawnRandomAnimal()
+    private string SpawnRandomAnimal()
     {
         stringIndex = Random.Range(0, element.Length);
-        //Instantiate(element[stringIndex], new Vector3(0, 0, 2), Quaternion.identity);
+        return element[stringIndex];
 
     }
 
     private void Start()
     {
-        SpawnRandomAnimal();
+        Debug.Log($"{SpawnRandomAnimal()}");
     }
 
 }
